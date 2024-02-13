@@ -253,19 +253,29 @@ Noter le changement dans l’onglet Git Graph. Que signifie la mention Fast-forw
 - la branche de fct1 rejoint la branche master lord du merge
 
 On veut maintenant fusionner fonctionnalite2 dans la branche d’intégration (master). Effectuer cette fusion.
+- git merge fonctionnalité2
 
 Noter le changement dans l’onglet Git Graph. Que signifie la mention Merge made by the … strategy indiquée par la sortie de la commande ?
+- cela veut dire que le merging a était effectué entre fct2 et master
 
 Quelle est la différence fondamentale avec la fusion précédente ?
 
 Créer une nouvelle branche fonctionnalite3, se déplacer dessus, et modifier le fichier fichier1.md en y ajoutant une ligne de texte. Committer : “Modification fichier1 pour fonctionnalité 3”
 
 Comment utiliser Git Graph pour qu’il nous montre les différences entre l’ancienne version de fichier1.md et la version courante que l’on vient de committer ?
+- il faut aller chercher les anciens commit plus bas dans la branch master
+
 Repartir sur master, et modifier fichier1.md en y ajoutant aussi une ligne (différente de celle qu’on a ajoutée sur l’autre branche) ; ajouter à l’index et commit
 
 Tenter de fusionner la branche fonctionnalite3 avec master
+- $ git merge fonctionnalite3
+- Auto-merging fichier1.md
+- CONFLICT (content): Merge conflict in fichier1.md
+- Automatic merge failed; fix conflicts and then commit the result.
+
 
 Que se passe-t-il et pourquoi ?
+- la fusion ne s'effcetue pas a cause des modification de fichier1.md
 Lancer un git status
 
 Que doit-on faire si on veut annuler la fusion en cours ? (ne pas lancer la commande)
