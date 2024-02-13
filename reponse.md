@@ -250,6 +250,7 @@ On va maintenant intégrer la branche fonctionnalite1, qui est terminée, dans l
 - git merge fonctionnalité1
 
 Noter le changement dans l’onglet Git Graph. Que signifie la mention Fast-forward indiquée par la sortie de la commande ?
+- la branche de fct1 rejoint la branche master lord du merge
 
 On veut maintenant fusionner fonctionnalite2 dans la branche d’intégration (master). Effectuer cette fusion.
 
